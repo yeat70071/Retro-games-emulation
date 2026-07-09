@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Retro Emulator</title>
+    <style>
+        body { 
+            margin: 0; 
+            padding: 0; 
+            background: #000; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+        }
+        #game-container { 
+            width: 800px; 
+            height: 600px; 
+            background: #000; 
+        }
+    </style>
+</head>
+<body>
+
+    <div id="game-container"></div>
+
+    <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
+    <script>
+        EJS_player = '#game-container';
+        EJS_core = 'psx';
+        EJS_gameUrl = 'Grand_Theft_Auto_1.chd'; 
+        EJS_biosUrl = 'SCPH5501.BIN';
+        EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
+        EJS_startOnLoaded = true;
+    </script>
+</body>
+</html>
